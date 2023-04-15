@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Strings-e-Themes</string>
+    <string name="welcome_guys">Welcome Guys</string>
+    <string name="first_lyric">
+        I have climbed the highest mountains \n
+        I have run through the fields \n
+        Only to be with you \n
+        Only to be with you \n
+    </string>
+    <string name="second_lyric">Second Lyric</string>
+
+    <string name="second_lyric_content">
+        I have run, I have crawled \n
+        I have scaled these city walls \n
+        These city walls \n
+        Only to be with you \n
+    </string>
+</resources>

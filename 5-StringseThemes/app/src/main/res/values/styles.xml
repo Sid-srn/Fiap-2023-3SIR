@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="lyric_card">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="cardBackgroundColor">#009688</item>
+        <item name="cardCornerRadius">15dp</item>
+    </style>
+
+    <style name="lyric_card.green">
+        <item name="cardBackgroundColor">#98FB98</item>
+    </style>
+
+    <style name="lyric_card.blue">
+        <item name="cardBackgroundColor">#87CEFA</item>
+    </style>
+
+</resources>

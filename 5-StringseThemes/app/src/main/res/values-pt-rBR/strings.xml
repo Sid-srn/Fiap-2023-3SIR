@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_lyric">
+        Eu escalei as mais altas montanhas \n
+        Eu corri através dos campos \n
+        Apenas para estar com você \n
+        Apenas para estar com você \n
+    </string>
+
+    <string name="second_lyric_content">
+        Eu corri, eu rastejei, \n
+        Eu escalei estes muros da cidade \n
+        Estes muros da cidade \n
+        Apenas para estar com você \n
+    </string>
+</resources>

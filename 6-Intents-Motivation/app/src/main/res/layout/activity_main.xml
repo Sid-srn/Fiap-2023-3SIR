@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#008B8B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBtnAll"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#0000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_data_object_24"
+        app:tint="@color/white"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnSun" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSun"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#0000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_sunny_24"
+        app:tint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/imgButnSmile"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnAll"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageButton
+        android:id="@+id/imgButnSmile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#0000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_emoji_emotions_24"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnSun"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:tint="@color/gray" />
+
+    <Button
+        android:id="@+id/btnOpenPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="#008B8B"
+        android:text="Consultar uma Frase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Ultima Frase consultada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpenPhrase" />
+
+    <ImageButton
+        android:id="@+id/icLastPhrase"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#0000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_data_object_24"
+        app:tint="@color/black"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/txtLastPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Ultima Frase consultada"
+
+        app:layout_constraintStart_toEndOf="@+id/icLastPhrase"
+        app:layout_constraintTop_toTopOf="@+id/icLastPhrase" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
