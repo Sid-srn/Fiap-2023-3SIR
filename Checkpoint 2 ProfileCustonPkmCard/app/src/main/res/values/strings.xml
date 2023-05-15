@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ProfileCustonPkmCard</string>
+    <string name="growlithe">Growlithe!</string>
+    <string name="decription">Decription:</string>
+    <string name="groelithe_description">Its excellent sense of smell ensures that this Pokémon doesnt forget a scent, no matter what. He uses his sense of smell to detect the emotions of others.</string>
+    <string name="skills">Skills:</string>
+    <string name="add_skill_whith_button"><![CDATA[> add Skill whith Button]]></string>
+    <string name="edit_skills">+ edit Skills</string>
+    <string name="scarlet">Scarlet</string>
+    <string name="skill_list">Skill List</string>
+    <string name="bite">Bite</string>
+    <string name="ember">Ember</string>
+    <string name="fire_fang">Fire Fang</string>
+    <string name="fire_blast">Fire Blast</string>
+    <string name="update_skill">Update Skill</string>
+</resources>

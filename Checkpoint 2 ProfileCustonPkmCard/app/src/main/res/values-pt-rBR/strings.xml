@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProfileCustonPkmCard</string>
+    <string name="growlithe">Growlithe!</string>
+    <string name="decription">Descrição:</string>
+    <string name="groelithe_description">Seu excelente olfato garante que este Pokémon não esqueça nenhum cheiro, não importa do quê. Ele usa o olfato para detectar as emoções dos outros.</string>
+    <string name="skills">Habilidades:</string>
+    <string name="add_skill_whith_button"><![CDATA[> adicione habilidades \ncom botão]]></string>
+    <string name="edit_skills">+ editar \nHabilidades</string>
+    <string name="scarlet">Scarlet</string>
+    <string name="skill_list">Lista de Habilidades</string>
+    <string name="bite">Mordida</string>
+    <string name="ember">Brasas</string>
+    <string name="fire_fang">Presa de Fogo</string>
+    <string name="fire_blast">Explosão de Fogo</string>
+    <string name="update_skill">Atualizar Habilidades</string>
+</resources>
