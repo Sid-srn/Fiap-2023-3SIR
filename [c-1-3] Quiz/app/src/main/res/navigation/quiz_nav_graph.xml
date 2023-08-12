@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/quiz_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.quizfragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_questaoFragment"
+            app:destination="@id/questaoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoFragment"
+        android:name="com.example.quizfragment.QuestaoFragment"
+        android:label="QuestaoFragment" >
+        <action
+            android:id="@+id/action_questaoFragment_to_acertouFragment"
+            app:destination="@id/acertouFragment" />
+        <action
+            android:id="@+id/action_questaoFragment_to_errouFragment"
+            app:destination="@id/errouFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acertouFragment"
+        android:name="com.example.quizfragment.AcertouFragment"
+        android:label="AcertouFragment" >
+        <action
+            android:id="@+id/action_acertouFragment_to_questaoFragment"
+            app:destination="@id/questaoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/errouFragment"
+        android:name="com.example.quizfragment.ErrouFragment"
+        android:label="ErrouFragment" >
+        <action
+            android:id="@+id/action_errouFragment_to_questaoFragment"
+            app:destination="@id/questaoFragment" />
+    </fragment>
+</navigation>

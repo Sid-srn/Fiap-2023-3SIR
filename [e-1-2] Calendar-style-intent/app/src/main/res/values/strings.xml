@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calendar-style-intent</string>
+    <string name="data_do_compromisso">-- Schedule Date --</string>
+    <string name="detalhes_do_seu_compromisso">Schedule Details</string>
+    <string name="salvar_compromisso">Save Schedule</string>
+    <string name="criar_compromisso">-- Create Schedule --</string>
+    <string name="mudar_tema">change Theme</string>
+</resources>

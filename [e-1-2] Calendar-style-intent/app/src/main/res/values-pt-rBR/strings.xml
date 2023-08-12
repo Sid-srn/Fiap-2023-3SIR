@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calendar-style-intent</string>
+    <string name="data_do_compromisso">-- Data do Compromisso --</string>
+    <string name="detalhes_do_seu_compromisso">Detalhes do seu compromisso</string>
+    <string name="salvar_compromisso">Salvar compromisso</string>
+    <string name="criar_compromisso">-- Criar Compromisso --</string>
+    <string name="mudar_tema">mudar tema</string>
+</resources>
