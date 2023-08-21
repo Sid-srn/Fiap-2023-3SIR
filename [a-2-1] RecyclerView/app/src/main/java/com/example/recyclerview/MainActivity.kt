@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recyclerview.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), IDialogItem {
 
     private lateinit var bind: ActivityMainBinding
     private val adapter = ItemListaAdapter()
@@ -29,5 +29,13 @@ class MainActivity : AppCompatActivity() {
                 , "Terceiro Terceiro Terceiro Terceiro Terceiro Terceiro Terceiro Terceiro "
                 , false)
         ))
+
+        bind.floatBtn.setOnClickListener{
+            PopupItemDialog.buildDialog(this).show(supportFragmentManager,"ADDDIALOG")
+        }
+    }
+
+    override fun addItem(item: ItemModel) {
+        adapter.addList(item)
     }
 }

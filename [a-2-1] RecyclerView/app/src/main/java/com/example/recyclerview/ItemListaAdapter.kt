@@ -42,4 +42,9 @@ class ItemListaAdapter :
         items.addAll(newItems)
         notifyDataSetChanged()
     }
+
+    fun addList(item:ItemModel){
+        items.add(item)
+        notifyItemChanged(items.size)
+    }
 }
