@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerview.databinding.ItemListViewBinding
 
-class ItemListaAdapter :
+class ItemListaAdapter(val iItemLister: IDialogItem) :
     RecyclerView.Adapter<ItemListaAdapter.ItemLineViewHolder>() {
 
     private val items: MutableList<ItemModel> = mutableListOf()
@@ -35,6 +35,12 @@ class ItemListaAdapter :
             items[position].detailVisibility = !items[position].detailVisibility
             notifyItemChanged(position)
         }
+        holder.itemHolder.btnEdit.setOnClickListener {
+            iItemLister.openEditItem(position, items[position])
+        }
+        holder.itemHolder.btnRemove.setOnClickListener {
+            iItemLister.removeItem(items[position])
+        }
     }
 
     fun setList(newItems: List<ItemModel>) {
@@ -45,6 +51,18 @@ class ItemListaAdapter :
 
     fun addList(item:ItemModel){
         items.add(item)
-        notifyItemChanged(items.size)
+        notifyItemInserted(items.size)
+    }
+
+    fun editItem(item:ItemModel, posicao:Int){
+        items[posicao] = item
+        notifyItemChanged(posicao)
+    }
+
+    fun removeItem(removed:ItemModel){
+        val removedIndex = items.indexOf(removed)
+        items.remove(removed)
+        notifyItemRemoved(removedIndex)
+        notifyItemRangeChanged(removedIndex, items.size)
     }
 }
