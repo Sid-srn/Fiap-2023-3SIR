@@ -1,4 +1,4 @@
-package com.example.apideckgame
+package com.example.apideckgame.model
 
 import com.example.apideckgame.model.CardModel
 import com.example.apideckgame.model.DeckModel
