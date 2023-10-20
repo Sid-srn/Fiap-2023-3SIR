@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bind = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
+        setContentView(bind.root)
 
         viewModel = ViewModelProvider(this, deckFactory)[DeckViewModel::class.java]
 
